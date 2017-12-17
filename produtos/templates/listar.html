@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block body %}
+<!-- connectedin/produtos/templates/listar.html -->
 	<div class="container ajuste-container">
 		<h3 class="h3-compras">Lista de Produtos <i class="pe-7s-note2 icons-home-inverso"></i></h3>
 
@@ -7,7 +8,6 @@
 			<table class="table">
 				<thead>
 				    <tr>
-				    	<th scope="col">#</th>
 				      	<th scope="col">Produto</th>
 				      	<th scope="col">Descrição</th>
 				      	<th scope="col">Grupo</th>
@@ -19,39 +19,18 @@
 					</tr>
 				</thead>
 				<tbody>
-				    <tr>
-					    <th scope="row">1</th>
-						    <td>Audio TT</td>
-						    <td>Carro Novo</td>
-						    <td>Mobilidade</td>
-						    <td>7894563215469</td>
-						    <td>UN</td>
-						    <td>10000</td>
-						    <td>10</td>
-						    <td>RS: 250.000,00</td>
-					</tr>
+					{% for linha in produtos %}
 					    <tr>
-						    <th scope="row">2</th>
-						    	<td>Audio TT</td>
-							    <td>Carro Novo</td>
-							    <td>Mobilidade</td>
-							    <td>7894563215469</td>
-							    <td>UN</td>
-							    <td>10000</td>
-							    <td>10</td>
-							    <td>RS: 250.000,00</td>
-					    </tr>
-					<tr>
-						<th scope="row">3</th>
-					    	<td>Audio TT</td>
-						    <td>Carro Novo</td>
-						    <td>Mobilidade</td>
-						    <td>7894563215469</td>
-						    <td>UN</td>
-						    <td>10000</td>
-						    <td>10</td>
-						    <td>RS: 250.000,00</td>
-					</tr>
+						    <td>{{ linha.nome_produto }}</td>
+						    <td>{{ linha.descricao }}</td>
+						    <td>{{ linha.grupos }}</td>
+						    <td>{{ linha.codigo_barras }}</td>
+						    <td>{{ linha.unidade }}</td>
+						    <td>{{ linha.peso }}</td>
+						    <td>{{ linha.estoque }}</td>
+						    <td>{{ linha.valor }}</td>
+						</tr>
+					{% endfor %}
 				</tbody>
 			</table>
 		</div>
