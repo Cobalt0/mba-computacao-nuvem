@@ -1,0 +1,160 @@
+@import url('bootstrap.min.css');
+@import url('Icon-font-7-stroke-PIXEDEN-v-1.2.0/pe-icon-7-stroke/css/pe-icon-7-stroke.css');
+
+
+@font-face{
+    font-family: "Neris-Light";
+    src: url('../fontes/Neris/Neris-Light.otf');
+}
+@font-face{
+    font-family: "Neris-SemiBold";
+    src: url('../fontes/Neris/Neris-SemiBold.otf');
+}
+
+/*=============Reset===========*/
+*{
+    margin:0; 
+    padding:0; 
+    font-size:100%; 
+    /*border:none;*/ 
+    outline:none; 
+    box-sizing: border-box;
+}
+body{ 
+    width:100%;
+    float:left;
+    font-family: "Neris-SemiBold" !important;
+
+}
+.container{
+    width:100%;
+    float:left;
+}
+br{
+    clear: both;
+}
+
+
+aside{
+    width: 17%;
+    float: left;
+    height: 45.5em;
+    background-color: #41495c;
+    overflow-y: scroll;  
+    margin:0 !important;
+}
+.logado{
+    width: 100%;
+    height: 4em;
+    color: #fff;
+    float: left;
+    border-bottom: 1px solid #fff;
+    padding: 1em 0;
+}
+.icons-user{
+    font-size:2em;
+    color: #fff;
+    /*border:1px solid white;*/
+}
+
+.usuario-on{
+    font-weight: bold;
+    margin:0;
+    margin-top: 3px;
+    /*border:1px solid white;*/
+}
+
+.painel{
+    width: 100%;
+    float: left;
+    padding: 3em 0;
+
+}
+.icons-home{
+    font-size:2em;
+    color: #fff;
+    /*border:1px solid white;*/
+}
+.icons-home-inverso{
+    font-size:1.7em;
+    color: #222;
+    /*border:1px solid white;*/
+}
+.painel-menu{
+    /*border:1px solid yellow;*/
+    width: 100%;
+    float: left;
+    margin:5px 0 0 0;
+}
+.h5-painel-menu{
+    width: 100%;
+    color:#fff;
+    font-weight: bold;
+    font-size: 14px;
+    float: left;
+    margin-top:5px;
+    font-family: "Neris-SemiBold";
+    /*padding: 0.9em 0;*/
+    /*border:1px solid green;*/
+}
+
+
+.ajuste-container{
+    width: 83%  !important;
+}
+
+
+
+
+
+/****** CONFIG CADASTRO DE PRODUTOS *********/
+
+
+.formulario-produtos{
+    width: 50%;
+    float: left;
+    height: 38em;
+    margin: 1% 0 0 23.5%;
+    border-radius: 0.5em;
+    box-shadow: 0.2em 0.2em 0.2em 0.5em #ccc;
+    padding: 2em;
+
+}
+
+.form{
+    width: 100% !important;
+    margin:0 !important;
+    float: left;
+}
+.formulario-cartoes, label{
+    font-size:14px;
+    font-family: "Neris-SemiBold" !important;
+}
+.btn-margin{
+    margin-top: 20px;
+}
+
+.text-success {
+    color: #34cc36 !important;
+    font-size: 17px !important;
+}
+.text-danger{
+    font-size: 17px !important;
+}
+
+.cartoes-lista{
+    width: 40%;
+    margin: 35px 0 0 43px;
+    padding:2em;
+    height:20em;
+    float: left;
+}
+
+/*ESTILIZAÇÃO LISTA DE PRODUTOS*/
+.lista-produtos{
+    font-family: "Neris-SemiBold" !important;
+    padding: 2em;
+    box-shadow: 0.2em 0.2em 0.2em 0.1em;
+    border-radius: 0.5em;
+
+}

@@ -1,5 +1,5 @@
 @echo off
-set "VIRTUAL_ENV=C:\Users\Cobalto\Desktop\MBA\DESENV~1\Projeto\git\PYTHON~1\APPENG~1\standard\django\env"
+set "VIRTUAL_ENV=C:\GIT\mba-computacao-nuvem\env"
 
 if defined _OLD_VIRTUAL_PROMPT (
     set "PROMPT=%_OLD_VIRTUAL_PROMPT%"

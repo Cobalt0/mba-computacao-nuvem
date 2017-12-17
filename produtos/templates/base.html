@@ -1,0 +1,65 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+	
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>controle de produtos</title>
+		<link href="{% static "css/estilo.css" %}" rel="stylesheet" /> <!-- Importando CSS -->
+		<link rel="stylesheet" href="{% static "css/Icon-font-7-stroke-PIXEDEN-v-1.2.0/pe-icon-7-stroke/css/pe-icon-7-stroke.css" %}">
+		<link rel="shortcut icon" href="img/favicon.png"/>
+		
+	</head>
+	<body>
+		<aside>
+			<div class="container">
+
+				<div class="painel">	
+
+					<div class="painel-menu">
+						<div class="col-md-3 col-sm-8 col-sx-12">
+						</div>
+
+						<div class="col-md-3 col-sm-3 col-sx-12">
+							<a href="{% url 'index' %}"><i class="pe-7s-home icons-home"></i></a>
+						</div>						
+					</div>
+
+					<br><br>
+					<div class="painel-menu">
+						<div class="col-md-8 col-sm-8 col-sx-12">
+							<h5 class="h5-painel-menu" title="Cadastro de Produtos">Produtos</h5>
+						</div>
+						<div class="col-md-3 col-sm-3 col-sx-12">
+							<i class="pe-7s-angle-right icons-home"></i>
+						</div>						
+					</div>
+
+					<div class="painel-menu">
+						<div class="col-md-8 col-sm-8 col-sx-12">
+							<a href="#"><h5 class="h5-painel-menu" title="Cadastrar Produto">Cadastrar</h5></a>
+						</div>
+						<div class="col-md-3 col-sm-3 col-sx-12">
+							<i class="pe-7s-ticket icons-home"></i>
+						</div>			
+					</div>
+					<div class="painel-menu">
+						<div class="col-md-8 col-sm-8 col-sx-12">
+							<a href="{% url 'listar' %}"><h5 class="h5-painel-menu" title="Consultar Produtos">Consultar</h5></a>
+						</div>
+						<div class="col-md-3 col-sm-3 col-sx-12">
+							<i class="pe-7s-search icons-home"></i>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</aside>
+
+		<div class="container ajuste-container">
+			{% block body %}
+			{% endblock %}
+		</div>
+	</body>
+	<script lang="javascript" src="{% static "js/jquery-1.12.3.min.js" %}"></script>
+</html>
