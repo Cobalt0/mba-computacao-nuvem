@@ -7,22 +7,30 @@ from django.views.generic.base import View
 def index(request):
     return render(request, 'index.html')
 
-def get(self, request, *args, **kwargs):
-		return render(request, self.template_name)
 
 
 def listar(request):
     return render(request, 'listar.html', {'produtos' : Produto.objects.all()})
 
 
+
+def editar(request, produto_id):
+	produto = Produto.objects.get(id=produto_id)
+	return render(request, 'editar_produto.html', {'produto' : produto})
+
+
+
+
+
+
 class RegistrarProdutoView(View):
 	
 	template_name = 'cadastro_produto.html'
 
-	def get(self, request, *args, **kwargs):
+	def get(self, request):
 		return render(request, self.template_name)
 		
-	def post(self, request, *args, **kwargs):
+	def post(self, request):
 
 		form = RegistrarPordutos(request.POST)
 
