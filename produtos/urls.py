@@ -8,4 +8,5 @@ urlpatterns = [
     url(r'^cadastrar/$', RegistrarProdutoView.as_view(), name="cadastrar"),
     url(r'^consultar$',  views.listar, name='listar'),
     url(r'^editar/(?P<produto_id>\d+)$', views.editar, name='editar'),
+    url(r'^excluir/(?P<produto_id>\d+)$', views.excluir, name='excluir'),
 ]

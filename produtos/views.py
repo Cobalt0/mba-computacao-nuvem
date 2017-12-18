@@ -18,10 +18,10 @@ def editar(request, produto_id):
 	produto = Produto.objects.get(id=produto_id)
 	return render(request, 'editar_produto.html', {'produto' : produto})
 
-
-
-
-
+def excluir(request, produto_id):
+    produto = Produto.objects.get(id=produto_id)
+    produto.delete();
+    return render(request, 'listar.html', {'produtos' : Produto.objects.all()})
 
 class RegistrarProdutoView(View):
 	
@@ -46,4 +46,5 @@ class RegistrarProdutoView(View):
 							valor=dados_form['valor'])
 		produto.save()
 
-		return redirect('index')
+		#return redirect('index')
+		return render(request, 'listar.html', {'produtos' : Produto.objects.all()})
