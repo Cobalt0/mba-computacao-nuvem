@@ -4,7 +4,7 @@
 	<h3 class="h3-compras">Cadastro de Produtos <i class="pe-7s-note2 icons-home-inverso"></i></h3>
 
 	<div class="formulario-produtos">
-		<form class="form" action="{% url 'cadastrar' %}" method="post">
+		<form class="form" action="{% url 'alterar' produto.id %}" method="post">
 			{% csrf_token %}
 		    <div class="row">
 

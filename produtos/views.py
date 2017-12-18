@@ -12,16 +12,32 @@ def index(request):
 def listar(request):
     return render(request, 'listar.html', {'produtos' : Produto.objects.all()})
 
-
-
 def editar(request, produto_id):
 	produto = Produto.objects.get(id=produto_id)
 	return render(request, 'editar_produto.html', {'produto' : produto})
 
+def alterar(request, produto_id):
+    produto = Produto.objects.get(id=produto_id)
+    
+    form = RegistrarPordutos(request.POST)
+
+    dados_form = form.data
+
+    produto.nome_produto = dados_form['nomeProduto']
+    produto.descricao = dados_form['descricao']
+    produto.grupos = dados_form['grupo']
+    produto.codigo_barras = dados_form['codigoBarras']
+    produto.unidade = dados_form['unidade']
+    produto.peso = dados_form['peso']
+    produto.estoque = dados_form['estoque']
+    produto.valor = dados_form['valor']
+    produto.save()
+    return redirect('listar')
+
 def excluir(request, produto_id):
     produto = Produto.objects.get(id=produto_id)
     produto.delete();
-    return render(request, 'listar.html', {'produtos' : Produto.objects.all()})
+    return redirect('listar')
 
 class RegistrarProdutoView(View):
 	
