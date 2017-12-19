@@ -139,7 +139,8 @@ aside{
     font-size: 17px !important;
 }
 .text-danger{
-    font-size: 17px !important;
+    font-size: 20px !important;
+    text-align: center ;
 }
 
 .cartoes-lista{
@@ -149,12 +150,467 @@ aside{
     height:20em;
     float: left;
 }
+.h5-painel-menu{
+    font-size:18px;
+}
 
 /*ESTILIZAÇÃO LISTA DE PRODUTOS*/
 .lista-produtos{
     font-family: "Neris-SemiBold" !important;
-    padding: 2em;
-    box-shadow: 0.2em 0.2em 0.2em 0.1em;
+    padding: 2em 0;
+    box-shadow: 0.2em 0.2em 0.5em 0.1em;
     border-radius: 0.5em;
+    width: 122%;
+}
 
+.h3-produtos{
+    text-align: center ;
+    margin-bottom: 46px;
+}
+
+@media screen and (min-width:375px){
+    aside {
+        width: 31%;
+        float: left;
+        height: 34.3em;
+    }
+    .ajuste-container {
+        width: 69% !important;
+    }
+    .icons-home {
+        font-size: 0.9em;
+        color: #fff;
+        margin: 3px 0 0 1px;
+    }
+    .col-sm-3{
+        min-height: 1px !important;
+        padding-right:0!important;
+    }
+    .h5-painel-menu{
+      font-size: 9px;  
+    }
+    .container {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+    .h3-produtos{
+        font-size:16px;
+    }
+    .text-danger {
+        font-size: 14px !important;
+        text-align: center;
+    }
+    .lista-produtos {
+        width: 248%;
+    }
+    .table>thead>tr>th {
+        font-size: 7px;
+    }
+    .table>tbody>tr>td{
+        font-size: 7px;
+    }
+    .btn {
+        font-size: 5px !important;
+    }
+    a {
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+
+    .formulario-produtos {
+        width: 97%;
+        height: 100%!important; 
+        margin: 1% 0 1em 1.5%;
+        padding: 1em;
+    }
+    .formulario-cartoes, label {
+        font-size: 12px !important;
+    }
+    .form-control {
+        font-size: 12px !important;
+    }
+
+}
+@media screen and (min-width:480px){
+    aside {
+        width: 31%;
+        float: left;
+        height: 34.3em;
+    }
+    .ajuste-container {
+        width: 69% !important;
+    }
+    .icons-home {
+        font-size: 0.9em;
+        color: #fff;
+        margin: 3px 0 0 1px;
+    }
+    .col-sm-3{
+        min-height: 1px !important;
+        padding-right:0!important;
+    }
+    .h5-painel-menu{
+      font-size: 9px;  
+    }
+    .container {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+    .h3-produtos{
+        font-size:16px;
+    }
+    .text-danger {
+        font-size: 14px !important;
+        text-align: center;
+    }
+    .lista-produtos {
+        width: 248%;
+    }
+    .table>thead>tr>th {
+        font-size: 7px;
+    }
+    .table>tbody>tr>td{
+        font-size: 7px;
+    }
+    .btn {
+        font-size: 5px !important;
+    }
+    a {
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+
+    .formulario-produtos {
+        width: 97%;
+        height: 100%!important; 
+        margin: 1% 0 1em 1.5%;
+        padding: 1em;
+    }
+    .formulario-cartoes, label {
+        font-size: 12px !important;
+    }
+    .form-control {
+        font-size: 12px !important;
+    }
+}
+@media screen and (min-width:640px){
+    aside {
+        width: 18%;
+        float: left;
+        height: 34.3em;
+    }
+    .ajuste-container {
+        width: 69% !important;
+    }
+    .icons-home {
+        font-size: 0.9em;
+        color: #fff;
+        margin: 3px 0 0 1px;
+    }
+    .col-sm-3{
+        min-height: 1px !important;
+        padding-right:0!important;
+    }
+    .h5-painel-menu{
+      font-size: 9px;  
+    }
+    .container {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+    .h3-produtos{
+        font-size:16px;
+    }
+    .text-danger {
+        font-size: 14px !important;
+        text-align: center;
+    }
+    .lista-produtos {
+        width: 174%;
+    }
+    .table>thead>tr>th {
+        font-size: 7px;
+    }
+    .table>tbody>tr>td{
+        font-size: 7px;
+    }
+    .btn {
+        font-size: 7px !important;
+    }
+    a {
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+
+    .formulario-produtos {
+        width: 97%;
+        height: 100%!important; 
+        margin: 1% 0 1em 1.5%;
+        padding: 1em;
+    }
+    .formulario-cartoes, label {
+        font-size: 12px !important;
+    }
+    .form-control {
+        font-size: 12px !important;
+    }
+}
+@media screen and (min-width:768px){
+    aside {
+        width: 18%;
+        float: left;
+        height: 34.3em;
+    }
+    .ajuste-container {
+        width: 69% !important;
+    }
+    .icons-home {
+        font-size: 0.9em;
+        color: #fff;
+        margin: 3px 0 0 1px;
+    }
+    .col-sm-3{
+        min-height: 1px !important;
+        padding-right:0!important;
+    }
+    .h5-painel-menu{
+      font-size: 9px;  
+    }
+    .container {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+    .h3-produtos{
+        font-size:16px;
+    }
+    .text-danger {
+        font-size: 14px !important;
+        text-align: center;
+    }
+    .lista-produtos {
+        width: 164%;
+        margin: 0 0 0 10px;
+    }
+    .table>thead>tr>th {
+        font-size: 9px;
+    }
+    .table>tbody>tr>td{
+        font-size: 9px;
+    }
+    .btn {
+        font-size: 11px !important;
+    }
+    a {
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+
+    .formulario-produtos {
+       width: 97%;
+        height: 100%!important;
+        margin: -3% 0 1em 8.5%;
+        padding: 1em;
+    }
+    .formulario-cartoes, label {
+        font-size: 12px !important;
+    }
+    .form-control {
+        font-size: 12px !important;
+    }
+}
+@media screen and (min-width:1024px){ 
+    aside {
+        width: 18%;
+        float: left;
+        height: 43.3em;
+    }
+    .ajuste-container {
+        width: 82% !important;
+    }
+    .icons-home {
+        font-size: 1.3em;
+        color: #fff;
+        margin: 3px 0 0 1px;
+    }
+    .col-sm-3{
+        min-height: 1px !important;
+        padding-right:0!important;
+    }
+    .h5-painel-menu{
+      font-size: 17px;  
+    }
+    .container {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+    .h3-produtos{
+        font-size:23px;
+    }
+    .text-danger {
+        font-size: 14px !important;
+        text-align: center;
+    }
+    .lista-produtos {
+        width: 100%;
+        margin: 0 0 0 81px;
+    }
+    .table>thead>tr>th {
+        font-size: 13px;
+    }
+    .table>tbody>tr>td{
+        font-size: 13px;
+    }
+    .btn {
+        font-size: 11px !important;
+    }
+    a {
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+
+    .formulario-produtos {
+        width: 58%;
+        height: 100%!important;
+        margin: 2% 0 1em 24.5%;
+        padding: 2em;
+    }
+    .formulario-cartoes, label {
+        font-size: 12px !important;
+    }
+    .form-control {
+        font-size: 12px !important;
+    }
+}
+@media screen and (min-width:1200px){
+    aside {
+        width: 18%;
+        float: left;
+        height: 43.3em;
+    }
+    .ajuste-container {
+        width: 82% !important;
+    }
+    .icons-home {
+        font-size: 1.3em;
+        color: #fff;
+        margin: 3px 0 0 1px;
+    }
+    .col-sm-3{
+        min-height: 1px !important;
+        padding-right:0!important;
+    }
+    .h5-painel-menu{
+      font-size: 18px;  
+    }
+    .container {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+    .h3-produtos{
+        font-size:23px;
+    }
+    .text-danger {
+        font-size: 14px !important;
+        text-align: center;
+    }
+    .lista-produtos {
+        width: 100%;
+        margin: 0 0 0 81px;
+    }
+    .table>thead>tr>th {
+        font-size: 13px;
+    }
+    .table>tbody>tr>td{
+        font-size: 13px;
+    }
+    .btn {
+        font-size: 11px !important;
+    }
+    a {
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+
+    .formulario-produtos {
+        width: 58%;
+        height: 100%!important;
+        margin: 2% 0 1em 24.5%;
+        padding: 2em;
+    }
+    .formulario-cartoes, label {
+        font-size: 12px !important;
+    }
+    .form-control {
+        font-size: 12px !important;
+    }
+}
+@media screen and (min-width:1280px){
+     aside {
+        width: 18%;
+        float: left;
+        height: 43.3em;
+    }
+    .ajuste-container {
+        width: 82% !important;
+    }
+    .icons-home {
+        font-size: 1.3em;
+        color: #fff;
+        margin: 3px 0 0 1px;
+    }
+    .col-sm-3{
+        min-height: 1px !important;
+        padding-right:0!important;
+    }
+    .h5-painel-menu{
+      font-size: 18px;  
+    }
+    .container {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+    .h3-produtos{
+        font-size:23px;
+    }
+    .text-danger {
+        font-size: 14px !important;
+        text-align: center;
+    }
+    .lista-produtos {
+        width: 100%;
+        margin: 0 0 0 81px;
+    }
+    .table>thead>tr>th {
+        font-size: 13px;
+    }
+    .table>tbody>tr>td{
+        font-size: 13px;
+    }
+    .btn {
+        font-size: 11px !important;
+    }
+    a {
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+
+    .formulario-produtos {
+        width: 58%;
+        height: 100%!important;
+        margin: 2% 0 1em 20%;
+        padding: 2em;
+    }
+    .formulario-cartoes, label {
+        font-size: 12px !important;
+    }
+    .form-control {
+        font-size: 12px !important;
+    }
 }
