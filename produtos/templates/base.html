@@ -8,7 +8,7 @@
 		<title>controle de produtos</title>
 		<link href="{% static "css/estilo.css" %}" rel="stylesheet" /> <!-- Importando CSS -->
 		<link rel="stylesheet" href="{% static "css/Icon-font-7-stroke-PIXEDEN-v-1.2.0/pe-icon-7-stroke/css/pe-icon-7-stroke.css" %}">
-		<link rel="shortcut icon" href="img/favicon.png"/>
+		<link rel="shortcut icon" href="{% static "img/favicon.png"%}"/>
 		
 	</head>
 	<body>
@@ -27,7 +27,7 @@
 					</div>
 
 					<br><br>
-					<div class="painel-menu">
+					<!-- <div class="painel-menu">
 						<div class="col-md-8 col-sm-8 col-sx-12">
 							<h5 class="h5-painel-menu" title="Cadastro de Produtos">Produtos</h5>
 						</div>
@@ -35,7 +35,7 @@
 							<i class="pe-7s-angle-right icons-home"></i>
 						</div>						
 					</div>
-
+ -->
 					<div class="painel-menu">
 						<div class="col-md-8 col-sm-8 col-sx-12">
 							<a href="{% url 'cadastrar' %}"><h5 class="h5-painel-menu" title="Cadastrar Produto">Cadastrar</h5></a>
