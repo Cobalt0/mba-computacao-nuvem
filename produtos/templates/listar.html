@@ -9,7 +9,7 @@
 			<table class="table">
 				<thead>
 				    <tr>
-				      	<th scope="col">Produto</th>
+				      	<th scope="col" style="padding-left:20px">Produto</th>
 				      	<th scope="col">Descrição</th>
 				      	<th scope="col">Grupo</th>
 				      	<th scope="col">Código de Barras</th>
@@ -24,7 +24,7 @@
 				<tbody>
 					{% for linha in produtos %}
 					    <tr>
-						    <td>{{ linha.nome_produto }}</td>
+						    <td style="padding-left:20px">{{ linha.nome_produto }}</td>
 						    <td>{{ linha.descricao }}</td>
 						    <td>{{ linha.grupos }}</td>
 						    <td>{{ linha.codigo_barras }}</td>
