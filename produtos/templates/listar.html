@@ -2,9 +2,10 @@
 {% block body %}
 <!-- connectedin/produtos/templates/listar.html -->
 	<div class="container ajuste-container">
-		<h3 class="h3-compras">Lista de Produtos <i class="pe-7s-note2 icons-home-inverso"></i></h3>
-
+		<h3 class="h3-produtos">Lista de Produtos <i class="pe-7s-note2 icons-home-inverso"></i></h3>
+		{% if produtos %}
 		<div class="lista-produtos">
+		
 			<table class="table">
 				<thead>
 				    <tr>
@@ -36,13 +37,16 @@
 						    </td>
 						    <td>
 						    	
-						    	<a href="/excluir/{{linha.id}}" class="btn btn-danger">Remover</a>
+						    	<a href="/remover/{{linha.id}}" class="btn btn-danger">Remover</a>
 						    </td>
 						</tr>
 					{% endfor %}
 				</tbody>
 			</table>
 		</div>
+		{% else %}
+			<p class="text-danger">Nenhum produto Cadastrado :(</p>
+		{% endif %}
 
 	</div>
 {% endblock %}
