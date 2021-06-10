@@ -12,5 +12,5 @@ name = "pypi"
 [packages]
 
 pymysql = "==0.7.11"
-django = "==1.7.4"
+django = "==2.2.24"
 requests = "*"
